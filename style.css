@@ -1,0 +1,269 @@
+@font-face {
+    font-family: 'HorizonOutline';
+    src: url(fonts/Horizon.ttf)format('truetype');
+}
+
+@font-face {
+    font-family: 'Horizon';
+    src: url(fonts/Horizon.otf)format('truetype');
+}
+
+body {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 100vh;
+    margin: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transition: 1s ease;
+    background-color: #1D49A7;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    background-color: #1D49A7;
+    color: white;
+    font-family: 'Horizon', sans-serif;
+    font-size: 6rem;
+    padding-right: 2rem;
+}
+
+#michael {
+    position: absolute;
+    top:50%;
+    transform: translateY(-100%);
+}
+
+#lucky {
+    position: absolute;
+    top:50%;
+}
+
+.right-side {
+    background-color: #000000;
+    color: white;
+    font-family: 'HorizonOutline', sans-serif;
+    font-size: 6rem;
+    padding-left: 2rem;
+}
+
+#about:hover, #projects:hover, #contact:hover{
+    font-family: 'Horizon', sans-serif;
+    cursor: pointer;
+}
+
+#about-text{
+    position: absolute;
+    height: 65vh;
+    width: 50vw;
+    top: 100%;
+    left: 5%;
+    transition: 0.8s ease;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+}
+
+.skill-list {
+    position: absolute;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    width: 50vw;
+    top: 68%;
+    left: 20%;
+}
+
+li{
+    transition: 1s ease;
+}
+
+.back-button {
+    opacity: 0;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    top: 88%;
+    right: 2%;
+    font-size: 3rem;
+}
+
+.back-button:hover {
+    font-family: 'HorizonOutline', sans-serif;
+    cursor: pointer;
+}
+
+.prev-page {
+    opacity: 0;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    top: 88%;
+    left: 2%;
+    font-size: 3rem;
+}
+
+.prev-page:hover {
+    font-family: 'Horizon', sans-serif;
+    cursor: pointer;
+}
+
+.gmrd, .clicker, .cyber-says {
+    opacity: 0;
+    transition: 0.5s ease
+}
+
+.slide{
+    transition: 1s ease;
+}
+
+#about{
+    position: absolute;
+    top:50%;
+    transform: translateY(-200%)
+}
+
+#projects{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+#contact{
+    position: absolute;
+    top:50%;
+    transform: translateY(100%);
+}
+
+img {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+}
+
+.gmrd {
+    position: absolute;
+    font-size: 3rem;
+    top: 49%;
+    left: 15%;
+}
+
+.clicker {
+    position: absolute;
+    font-size: 3rem;
+    top: 32%;
+    left: 15%;
+}
+
+.cyber-says {
+    position: absolute;
+    font-size: 3rem;
+    top: 40.5%;
+    left: 15%;
+}
+
+.cyber-says:hover, .clicker:hover, .gmrd:hover {
+    cursor: pointer;
+    font-family: 'Horizon', sans-serif;
+}
+
+.info {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    opacity: 0;
+}
+
+.screenshot {
+    height: 35vh;
+    top: 13%;
+    left: 50%;
+    transition: 0.5s ease;
+}
+
+.descrip {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 0.5s ease;
+    opacity: 0;
+    padding-right: 5rem;
+}
+
+.github{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    opacity: 0;
+}
+
+.site {
+    position: absolute;
+    top: 75%;
+    left: 60%;
+    opacity: 0;
+}
+
+button{
+    cursor: default;
+    transition: 0.5s ease;
+    opacity: 0;
+    font-size: 1rem;
+    font-family: 'Space Grotesk', sans-serif;
+    border: 0.1rem solid white;
+    border-radius: 0.25rem;
+    transition: 0.5s ease;
+    width: 7rem;
+    height: 3rem;
+    background-color: black;
+    color: white;
+}
+
+button:hover {
+    background-color: #1D49A7;
+    cursor: default;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -25%);
+    gap: 2rem;
+}
+
+.contact > * {
+    opacity: 0;
+    font-size: 2.5rem;
+    font-family: 'HorizonOutline', sans-serif;
+    transition: 0.5s ease;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 100vh;
+    position: absolute;
+    left: 0%;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
