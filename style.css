@@ -241,8 +241,8 @@ button:hover {
 
 .contact > * {
     opacity: 0;
-    font-size: 2.5rem;
-    font-family: 'HorizonOutline', sans-serif;
+    font-size: 3rem;
+    font-family: 'Space Grotesk', sans-serif;
     transition: 0.5s ease;
 }
 
